@@ -29,13 +29,13 @@ Notas de GitHub
 |`git checkout master <file>`|Obtener versión del archivo que está en master.|
 |Repositorios Remotos|----------------|
 |`git remote add origin <REPO-URL>`|Clonar y traer un repo remoto.|
-|`git remote -v`||
+|`git remote -v`|Ver orígenes|
 |`git pull origin master`|Descargar los cambios desde el repositorio remoto.|
 |`git branch <name_branch>`|Crear nueva rama.|
 |`git branch`|Listar todas las ramas.|
 |`git checkout <branch>`|Moverse entre ramas.|
 |`git push origin master`|Enviar los cambios al repo remoto master.|
-|||
+|`git merge <branch>`|Fusionar ramas|
 |||
 |||
 |||
