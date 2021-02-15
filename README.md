@@ -1,6 +1,5 @@
 # git-github-notes
-Notas de GitHub
-[Curso Profesional de Git y GitHub en Platzi](https://platzi.com/clases/git-github/)
+> Notas de GitHub [Curso Profesional de Git y GitHub en Platzi](https://platzi.com/clases/git-github/)
 
 
 | Comando | Descripción |
@@ -36,6 +35,12 @@ Notas de GitHub
 |`git checkout <branch>`|Moverse entre ramas.|
 |`git push origin master`|Enviar los cambios al repo remoto master.|
 |`git merge <branch>`|Fusionar ramas|
+|Configurar llaves|----------------|
+|`ssh-keygen -t rsa -b 4096 -C "tu_email@dominio.com"`|Generar llave. -t = Especifica cual es el algoritmo que vamos a usar para crear esa llave. rsa = Algoritmo a usar, hasta el momento el mas popular. -b = Especifica que tan compleja es la llave. 4096 = Complejidad de la llave desde una perspectiva matemática. -C = Indica a que correo electrónico va estar conectado esta llave|
+|`eval $(ssh-agent -s)`|Evaluar servidor ssh activo|
+|`ssh-add ~/.ssh/id_rsa`|Agregar llave privada|
+|sd|sdsd|
+|||
 |||
 |||
 |||
