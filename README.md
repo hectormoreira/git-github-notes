@@ -35,6 +35,7 @@
 |`git show-branch`|Listar todas las ramas e historia.|
 |`git show-branch --all`|Listar todas las ramas e historia.|
 |`git checkout <branch>`|Moverse entre ramas.|
+|`git merge <branch>`|Hacer merge entre ramas.|
 |`gitk`|Ver historial visual de git|
 |`git push origin master`|Enviar los cambios al repo remoto master.|
 |`git merge <branch>`|Fusionar ramas|
