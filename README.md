@@ -28,7 +28,9 @@
 |`git checkout master <file>`|Obtener versión del archivo que está en master.|
 |Repositorios Remotos|----------------|
 |`git remote add origin <REPO-URL>`|Clonar y traer un repo remoto.|
-|`git remote -v`|Ver orígenes|
+|`git remote -v`|Ver orígenes del repo|
+|`git remote add upstream <url_repo>`|Crea nueva fuente para traer datos|
+|`git pull upstream`|Todos los cambios de upstream a nuestra rama, esto se usa cuando se trabaja con fork.|
 |`git pull origin master`|Descargar los cambios desde el repositorio remoto.|
 |`git branch <name_branch>`|Crear nueva rama.|
 |`git branch`|Listar todas las ramas.|
@@ -36,21 +38,21 @@
 |`git show-branch --all`|Listar todas las ramas e historia.|
 |`git checkout <branch>`|Moverse entre ramas.|
 |`git merge <branch>`|Hacer merge entre ramas.|
-|`gitk`|Ver historial visual de git|
+|`gitk`|Ver historial visual de git.|
 |`git push origin master`|Enviar los cambios al repo remoto master.|
-|`git merge <branch>`|Fusionar ramas|
+|`git merge <branch>`|Fusionar ramas.|
 |Configurar llaves|----------------|
-|`ssh-keygen -t rsa -b 4096 -C "tu_email@dominio.com"`|Generar llave. -t = Especifica cual es el algoritmo que vamos a usar para crear esa llave. rsa = Algoritmo a usar, hasta el momento el mas popular. -b = Especifica que tan compleja es la llave. 4096 = Complejidad de la llave desde una perspectiva matemática. -C = Indica a que correo electrónico va estar conectado esta llave|
-|`eval $(ssh-agent -s)`|Evaluar servidor ssh activo|
-|`ssh-add ~/.ssh/id_rsa`|Agregar llave privada|
-|`alias <nombre_alias> "<comando>"`|Crear nuevos alias|
-|`git tag -a v0.1 -m "mensaje" <hash_commit>`|Crear tags, los tags pueden usarse como releases|
-|`git tag`|Ver todos los tags|
-|`git show-ref --tags`|Ver todos los tags con referencias|
-|`git push origin --tags`|Enviar tags a github|
-|`git tag -d <nombre_tag>`|Eliminar tag|
-|`git push oprigin :refs/tags/<nombre_tag> `|Eliminar la referencia del tag en github|
-|||
+|`ssh-keygen -t rsa -b 4096 -C "tu_email@dominio.com"`|Generar llave. -t = Especifica cual es el algoritmo que vamos a usar para crear esa llave. rsa = Algoritmo a usar, hasta el momento el mas popular. -b = Especifica que tan compleja es la llave. 4096 = Complejidad de la llave desde una perspectiva matemática. -C = Indica a que correo electrónico va estar conectado esta llave.|
+|`eval $(ssh-agent -s)`|Evaluar servidor ssh activo.|
+|`ssh-add ~/.ssh/id_rsa`|Agregar llave privada.|
+|`alias <nombre_alias> "<comando>"`|Crear nuevos alias.|
+|`git tag -a v0.1 -m "mensaje" <hash_commit>`|Crear tags, los tags pueden usarse como releases.|
+|`git tag`|Ver todos los tags.|
+|`git show-ref --tags`|Ver todos los tags con referencias.|
+|`git push origin --tags`|Enviar tags a github.|
+|`git tag -d <nombre_tag>`|Eliminar tag.|
+|`git push origin :refs/tags/<nombre_tag> `|Eliminar la referencia del tag en github.|
+|`git clone <url_repo>`|Clonar repositorio.|
 |||
 |||
 |||
