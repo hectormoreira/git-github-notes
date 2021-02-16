@@ -27,7 +27,7 @@
 |`git checkout <commit> <file>`|Obtener versión del archivo.|
 |`git checkout master <file>`|Obtener versión del archivo que está en master.|
 |Repositorios Remotos|----------------|
-|`git remote add origin <REPO-URL>`|Clonar y traer un repo remoto.|
+|`git remote add origin <REPO-URL>`|Traer datos de un repo remoto a mi repo local.|
 |`git remote -v`|Ver orígenes del repo|
 |`git remote add upstream <url_repo>`|Crea nueva fuente para traer datos|
 |`git pull upstream`|Todos los cambios de upstream a nuestra rama, esto se usa cuando se trabaja con fork.|
