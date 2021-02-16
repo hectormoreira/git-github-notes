@@ -41,7 +41,6 @@
 |`gitk`|Ver historial visual de git.|
 |`git push origin master`|Enviar los cambios al repo remoto master.|
 |`git merge <branch>`|Fusionar ramas.|
-|Configurar llaves|----------------|
 |`ssh-keygen -t rsa -b 4096 -C "tu_email@dominio.com"`|Generar llave. -t = Especifica cual es el algoritmo que vamos a usar para crear esa llave. rsa = Algoritmo a usar, hasta el momento el mas popular. -b = Especifica que tan compleja es la llave. 4096 = Complejidad de la llave desde una perspectiva matemática. -C = Indica a que correo electrónico va estar conectado esta llave.|
 |`eval $(ssh-agent -s)`|Evaluar servidor ssh activo.|
 |`ssh-add ~/.ssh/id_rsa`|Agregar llave privada.|
@@ -53,6 +52,16 @@
 |`git tag -d <nombre_tag>`|Eliminar tag.|
 |`git push origin :refs/tags/<nombre_tag> `|Eliminar la referencia del tag en github.|
 |`git clone <url_repo>`|Clonar repositorio.|
+|`git rebase <branch>`|Reorganiza el trabajo realizado. rebase reescribe la historia del repositorio, cambia la historia de donde comenzó la rama y **solo debe ser usado de manera local./**|
+|`git stash`|Guardar cambios en memoria y recuperarlos después|
+|`git stash list`|Ver lista de stash|
+|`git stash pop`|Recuperar los últimos cambios desde el stash a tu staging area.|
+|`git stash apply stash@{<num_stash>}`|Retomar los cambios de un stash.|
+|`git stash branch <nombre_de_la_rama>`|Crear una rama con el stash.|
+|`git stash branch nombre_de_rama stash@{<num_stash>}`|Crear una rama y aplicar un stash específico (obtenido desde git stash list)|
+|`git stash drop`|Borrar stash.|
+|`git clean --dry-run`|Simular lo que se borrará.|
+|`git clean -f`|Borrar archivos no traqueados.|
 |||
 |||
 |||
