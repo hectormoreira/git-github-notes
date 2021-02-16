@@ -21,8 +21,9 @@
 |`git diff <commit1> <commit2>`|Ver diferencias entre commits.|
 |`git log`|Ver todos los cambios.|
 |`git log --stat`|Ver cambios detallados.|
+|`git reflog`|Ver listado de HEAD y commits, historial.|
 |`git reset --soft`|Borramos todo el historial y los registros de Git pero guardamos los cambios que tengamos en Staging, así podemos aplicar las últimas actualizaciones a un nuevo commit.|
-|`git reset --hard`|Borra todo. Todo todito, absolutamente todo. Toda la información de los commits y del área de staging se borra del historial.|
+|`git reset --hard <id_head_reflog>`|Borra todo. Todo todito, absolutamente todo. Toda la información de los commits y del área de staging se borra del historial.|
 |`git reset HEAD`|Retirar todos los archivos del staging, sin borrarlos.|
 |`git checkout <commit> <file>`|Obtener versión del archivo.|
 |`git checkout master <file>`|Obtener versión del archivo que está en master.|
@@ -34,10 +35,12 @@
 |`git pull origin master`|Descargar los cambios desde el repositorio remoto.|
 |`git branch <name_branch>`|Crear nueva rama.|
 |`git branch`|Listar todas las ramas.|
+|`git branch -r`|Listar todas las ramas en remoto.|
+|`git branch -a`|Listar todas las ramas en remoto y local.|
 |`git show-branch`|Listar todas las ramas e historia.|
 |`git show-branch --all`|Listar todas las ramas e historia.|
 |`git checkout <branch>`|Moverse entre ramas.|
-|`git merge <branch>`|Hacer merge entre ramas.|
+|`git merge <branch>`|Hacer merge (fusionar) entre ramas.|
 |`gitk`|Ver historial visual de git.|
 |`git push origin master`|Enviar los cambios al repo remoto master.|
 |`git merge <branch>`|Fusionar ramas.|
@@ -62,6 +65,16 @@
 |`git stash drop`|Borrar stash.|
 |`git clean --dry-run`|Simular lo que se borrará.|
 |`git clean -f`|Borrar archivos no traqueados.|
+|`git commit --amend`|Añade archivos y cambia mensaje en el último commit.|
+|`git grep <palabra>`|Buscar palabras usadas en el repositorio.|
+|`git grep -n <palabra>`|Buscar palabras usadas en el repositorio + linea.|
+|`git grep -c <palabra>`|Buscar palabras usadas en el repositorio + cantidad.|
+|`git log -S "palabra"`|Buscar las veces que se usó una palabra en los commits.|
+|`git shortlog -sn`|Log por persona de los cambios.|
+|`git shortlog -sn --all`|Todos los cambios por personas.|
+|`git shortlog -sn --all --no-merges`|Todos los cambios por personas sin merges.|
+|`git config --global alias.stats "shortlog -sn --all --no-merges"`|Crear un alias global|
+|`git blame <archivo> -c`|Ver cambios del archivo con usuario|
 |||
 |||
 |||
