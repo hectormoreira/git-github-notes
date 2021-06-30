@@ -79,3 +79,11 @@
 |`git blame <archivo> -c`|Ver cambios del archivo con usuario.|
 |||
 |||
+
+
+## Problemas comunes
+
+- `fatal: refusing to merge unrelated histories` Solucion: `git pull origin [branch] --allow-unrelated-histories`
+> The “fatal: refusing to merge unrelated histories” Git error occurs when two unrelated projects are merged (i.e., projects that are not aware of each other’s existence and have mismatching commit histories).
+
+
