@@ -39,6 +39,7 @@
 |`git branch`|Listar todas las ramas.|
 |`git branch -r`|Listar todas las ramas en remoto.|
 |`git branch -a`|Listar todas las ramas en remoto y local.|
+|`git fetch`|Traer las ramas dwe remoto a local.|
 |`git show-branch`|Listar todas las ramas e historia.|
 |`git show-branch --all`|Listar todas las ramas e historia.|
 |`git checkout <branch>`|Moverse entre ramas.|
